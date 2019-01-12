@@ -3,13 +3,13 @@
 
 # TEAM
 
-    Telegraph Creative
-    Site: wearetelegraph.com
-    Twitter: wearetelegraph
+    Park Cities Presbyterian Church
+    Site: pcpc.org
+    Twitter: parkcitiespca
     Location: Dallas, TX
     --
-    @courtney271
-    @lindseybradford
+    @iambrianz
+
 
 
 # THANKS
@@ -24,9 +24,8 @@
 
 # TECHNOLOGY COLOPHON
 
-   HTML5, CSS3
-   jQuery, Modernizr+YepNope,
-   SASS, HAML
-   SusyGrids, Autoprefix
+#   HTML5, CSS3
+#   PostCSS, Tailwind CSS, Nunjucks
+#   Eleventy
 
 
