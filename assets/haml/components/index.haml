@@ -37,16 +37,15 @@
 
 
 
-
 %body.init
 
 
-    / # Header & Content Wrap
+    -# Header & Content Wrap
     %section#header-nav-wrap
         %section#main-site-navigation-wrap
             .site-navigation-inner
 
-                / # Logo
+                -# Logo
                 %header#site-header{:role => "banner"}
                     .left
                         %h1.logo
@@ -61,9 +60,8 @@
                         %a{:href => "#"} Live Stream /
                         %a{:href => "#"} Give
                         %a.js-search-trigger.search.ico{:href => "#", :'data-icon'=>'t'}
-                / # /END of Logo        
 
-                / # JS Search
+                -# JS Search
                 .js-search-wrap.hide-on-tablet
                     .js-search.search-and-submit
                         .inner-search
@@ -72,9 +70,9 @@
                                 %input{:type => "search", :placeholder => "Search"}/
                                 %button.ico-search{:type => "submit"}
                 #js-search-overlay
-                / # /END of JS Search
 
-                / # Mobile Nav
+
+                -# Mobile Nav
                 .js-mobile-menu-wrap
                     #js-mobile-menu
                         %span.menu-prompt
@@ -102,11 +100,10 @@
                                 .search-and-submit
                                     %input{:type => "search", :placeholder => "Search"}/
                                     %button.btn.icon{:type => "submit", :'data-icon'=>'t'}
-                
-                / # /END of Mobile Nav
 
 
-                / # Main Navigation
+
+                -# Navigation
                 %nav#main-navigation{:role => "navigation"}
                     %ol.navigation-list
                         %li.nav-item
@@ -329,79 +326,82 @@
 
 
 
-
-    
-    
-    
-                
-                / # /END of Main Navigation
-    / # Content Wrap
-    %main#content-wrap.slider-wrap{:role => "main"}
-
-        / # Home Slider
-        .slider-bounds
-            .content-row
-
-                #homeSlider.royalSlider.rsDefaultInv
-                    .rsContent
-                        %a.rsImg{:href => "http://placehold.it/1450x540"}
-                        %span.rsTmb
-                            %img{:src => "http://placehold.it/540x350", :alt => ""}/
-                        .slideContentWrap.rsABlock
-                            %h2
-                                Welcome to Park Cities
-                                %br/
-                                Presbyterian Church
-                            %hr/
-                            %a.btn.btn-secondary{:href => "#"} New Here?
-                            %a.btn.btn-secondary{:href => "#"} Directions &amp; Parking
-
-                    .rsContent
-                        %a.rsImg{:href => "http://placehold.it/1450x540"}
-                        %span.rsTmb
-                            %img{:src => "http://placehold.it/540x350", :alt => ""}/
-                        .rsABlock.rsFirstSlideTitle.rsSlideTitle
-                            %h2 Headers with Transitions
-                        .rsABlock.rsSecondSlideTitle.rsSlideTitle{:'data-delay'=>'350'}
-                            %h5
-                                These are optional headers—a great way to add
-                                %br/
-                                a bit of complexity to simple images
-
-                    .rsContent
-                        %a.rsImg{:href => "http://placehold.it/1450x540"}
-                        %span.rsTmb
-                            %img{:src => "http://placehold.it/540x350", :alt => ""}/
-                        .rsABlock.rsFirstSlideTitle.rsSlideTitle
-                            %h2 Another, single Header with Transition
-                    .rsContent
-                        %a.rsImg{:href => "http://placehold.it/1450x540"}
-                        %span.rsTmb
-                            %img{:src => "http://placehold.it/540x350", :alt => ""}/
-        
-        / # /END of Home Slider
-
-        / # Upcoming Sermon
+    -# Content Wrap
+    %main#content-wrap{:role => "main"}
         .outer-bounds
-            .content-row#sermon-info.content-article.padding-b
-                %hr/
-                .content-row
-                    .col-three
-                        %h2.serif UPCOMING SERMON
-                        %p.date Sunday, June 29, 2014
-                    .col-six
-                        %h4.serif SERIES ON PRAYER
-                        %h5 When Have We Loved One Another Enough?
-                        %h6 1 Thessalonians 4:9-12
-                    .col-three
-                        %h4.serif PREACHING
-                        %h6 Chad Scruggs
-                %hr/
-        / # /END of Upcoming Sermon
+            .content-row
+                %nav.sub
+                    %ul.border-b
+                        %li.title
+                            %h6
+                                Who We Are
+                        %li.active
+                            %a{:href => "/assets/html/index.html"} Our Theological Identity
+                        %li
+                            %a{:href => "/assets/html/article-video.html"} Our History
+                        %li
+                            %a{:href => "#"} Stories of Rescue
 
-    / # /END of Content Wrap
+                        %li.title
+                            %h6
+                                Our Campus
+                        %li
+                            %a{:href => "/assets/html/article-map"} New to PCPC
+                        %li
+                            %a{:href => "/assets/html/article-list"} Our Session and Diaconate
+                        %li
+                            %a{:href => "#"} Item
+                        %li
+                            %a{:href => "#"} Item
+                        %li.title
+                            %h6
+                                Title
+                        %li
+                            %a{:href => "#"} Item
+                        %li
+                            %a{:href => "#"} Item
+                        %li
+                            %a{:href => "#"} Item
+                        %li
+                            %a{:href => "#"} Item
 
-    / # Site Footer
+                .main-content
+                    %header.content-header
+                        %h2 Our Theological Identity
+                        %hr/
+                        %img{:src => "http://pcpc.org/image/2/990/300/5/0/uploads/images/pages/dscf0022.jpg", :alt => ""}/
+                        %hr/
+
+                        %p.lead
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, pariatur, deserunt voluptatem quis unde odit ipsum dolor iste officia porro recusandae excepturi adipisci sapiente accusamus nostrum aliquid veniam obcaecati minima.
+
+                    %article.content-article
+                        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolorem, molestias accusantium dignissimos perferendis ut quae pariatur nihil commodi nesciunt necessitatibus magni beatae optio voluptatibus debitis fugiat amet saepe repudiandae!
+                        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolorem, molestias accusantium dignissimos perferendis ut quae pariatur nihil commodi nesciunt necessitatibus magni beatae optio voluptatibus debitis fugiat amet saepe repudiandae!
+
+                        %hr/
+                        %h3 What is it that we believe
+
+                        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolorem, molestias accusantium dignissimos perferendis ut quae pariatur nihil commodi nesciunt necessitatibus magni beatae optio voluptatibus debitis fugiat amet saepe repudiandae!
+
+                        %hr/
+                        %h3 We are evangelical
+                        %p To say that we are evangelical means that we take our stand with all those who believe in what used to be called “the fundamentals”: the existence of the triune God, the deity of Jesus, the virgin birth, and substitutionary and vicarious atonement of Christ, the physical resurrection of Christ, the sure return of Christ, and the infallibility and divine authority of the Bible which is a faithful and true guide to what we are to believe and how we are to live. We joyfully affirm our unity with those from every tradition and denomination who hold to these fundamentals including those true believers in Christ who, for whatever reasons, find themselves members of denominations or churches with which we might have certain disagreements.
+
+                        %hr/
+                        %h3 We are evangelistic
+                        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolorem, molestias accusantium dignissimos perferendis ut quae pariatur nihil commodi nesciunt necessitatibus magni beatae optio voluptatibus debitis fugiat amet saepe repudiandae!
+                        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolorem, molestias accusantium dignissimos perferendis ut quae pariatur nihil commodi nesciunt necessitatibus magni beatae optio voluptatibus debitis fugiat amet saepe repudiandae!
+
+
+            %footer.sub
+                .breadcrumb
+                    %a{:href => "#"} About
+                    %a{:href => "#"} Theological Identity
+
+
+
+    -# Site Footer
     %footer.footer#main-footer{:role=>'contentinfo'}
         .outer-bounds
             .footer-links
@@ -514,7 +514,6 @@
                 %small
                     %a{:href => "#"} Staff Access
 
-    / # /END of Site Footer
 
 
 
@@ -522,22 +521,18 @@
 
 
 
-    / # Scripts
-    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
-    // window.jQuery || document.write('<script src="../js/min/jquery.min.js"><\/script>')
+-# Scripts
+%script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+// window.jQuery || document.write('<script src="../js/min/jquery.min.js"><\/script>')
 
-    %script{:src => "../js/min/app.min.js"}
-    %script{:src => "../js/min/sitescripts.min.js"}
-    %script{:src => "../js/min/homescripts.min.js"}
+%script{:src => "../js/min/app.min.js"}
+%script{:src => "../js/min/sitescripts.min.js"}
 
-    / # Google Analytics
+-# Google Analytics
     %script
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
-
-    / # /END of Scripts
-
 
 </html>

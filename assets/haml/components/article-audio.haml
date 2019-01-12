@@ -1,0 +1,56 @@
+
+
+.main-content
+
+    #jump-to-nav.show-on-tablet
+        %a.btn.btn-neutral.full-bleed{:href => "#subnav"} Browse this Section
+
+    %header.content-header
+        %h2 When the Lord Himself Descends
+        %p.lead from the series 1 & 2 Thessalonians
+
+    #audio.content-row.padding-t
+        %audio.progression-single.progression-skin.progression-audio-player{:controls => "controls", :preload => "none"}
+            %source{:src => '../audio/06 Slow It Down.mp3', :type => 'audio/mp3'}
+            %source{:src => '../audio/06 Slow It Down.ogg', :type => 'audio/ogg'}
+            // Flash Fallback
+            %object{:data => "flashmediaelement.swf", :type => "application/x-shockwave-flash"}
+                %param{:name => "movie", :value => "../js/min/flashmediaelement.swf"}/
+                %param{:name => "flashvars", :value => "controls=true&file=../audio/your-filename.mp3"}/
+
+        %a.btn.right.media-btn.download{:href => "#"} Download MP3
+
+    %br/
+    %br/
+
+
+    %article.content-article
+        %ul.accordion-tabs-minimal
+            %li.tab-header-and-content
+                %a.tab-link{:href => "#"} Detail
+                .tab-content
+                    %h4 When Have We Loved One Another Enough?
+                    %h6 1 Thessalonians 4:9-12
+                    %h6 Mark Davis
+                    %p.date May 18, 2014
+            %li.tab-header-and-content
+                %a.tab-link{:href => "#"} Scripture
+                .tab-content
+                    %h4 1 Thessalonians 4:13-18
+                    %h5 The Coming of the Lord
+
+                    %p
+                        %span.verse-num
+                            14
+                        For this reason I bow my knees before the Father,
+                        %span.verse-num
+                            15
+                        from whom every familyOr fatherhood; the Greek word patria is closely related to the word for Father in heaven and on earth is named,
+                        %span.verse-num
+                            16
+                        that according to the riches of his glory he may grant you to be strengthened with power through his Spirit in your inner being…
+
+                    %cite
+                        The Holy Bible, English Standard Version copyright (c)2001 by Crossway Bibles, a division of Good News Publishers. Used by permission. All rights reserved. http://www.esv.org
+
+
